@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Store" targetNamespace="http://tempuri.org/DS_Store.xsd" xmlns:mstns="http://tempuri.org/DS_Store.xsd" xmlns="http://tempuri.org/DS_Store.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Store" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Store" msprop:Generator_UserDSName="DS_Store">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_STORE" msprop:Generator_TableClassName="DT_STOREDataTable" msprop:Generator_TableVarName="tableDT_STORE" msprop:Generator_TablePropName="DT_STORE" msprop:Generator_RowDeletingName="DT_STORERowDeleting" msprop:Generator_RowChangingName="DT_STORERowChanging" msprop:Generator_RowEvHandlerName="DT_STORERowChangeEventHandler" msprop:Generator_RowDeletedName="DT_STORERowDeleted" msprop:Generator_UserTableName="DT_STORE" msprop:Generator_RowChangedName="DT_STORERowChanged" msprop:Generator_RowEvArgName="DT_STORERowChangeEvent" msprop:Generator_RowClassName="DT_STORERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PARCODE" msprop:Generator_ColumnVarNameInTable="columnPARCODE" msprop:Generator_ColumnPropNameInRow="PARCODE" msprop:Generator_ColumnPropNameInTable="PARCODEColumn" msprop:Generator_UserColumnName="PARCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCT_x0020_NAME" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_NAME" msprop:Generator_ColumnPropNameInRow="PRODUCT_NAME" msprop:Generator_ColumnPropNameInTable="PRODUCT_NAMEColumn" msprop:Generator_UserColumnName="PRODUCT NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT" msprop:Generator_ColumnVarNameInTable="columnUNIT" msprop:Generator_ColumnPropNameInRow="UNIT" msprop:Generator_ColumnPropNameInTable="UNITColumn" msprop:Generator_UserColumnName="UNIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENCY" msprop:Generator_ColumnVarNameInTable="columnCURRENCY" msprop:Generator_ColumnPropNameInRow="CURRENCY" msprop:Generator_ColumnPropNameInTable="CURRENCYColumn" msprop:Generator_UserColumnName="CURRENCY" type="xs:string" minOccurs="0" />
+              <xs:element name="INITIAL_x0020_COAST" msprop:Generator_ColumnVarNameInTable="columnINITIAL_COAST" msprop:Generator_ColumnPropNameInRow="INITIAL_COAST" msprop:Generator_ColumnPropNameInTable="INITIAL_COASTColumn" msprop:Generator_UserColumnName="INITIAL COAST" type="xs:string" minOccurs="0" />
+              <xs:element name="LESS_x0020_PRICE" msprop:Generator_ColumnVarNameInTable="columnLESS_PRICE" msprop:Generator_ColumnPropNameInRow="LESS_PRICE" msprop:Generator_ColumnPropNameInTable="LESS_PRICEColumn" msprop:Generator_UserColumnName="LESS PRICE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRICE" msprop:Generator_ColumnVarNameInTable="columnPRICE" msprop:Generator_ColumnPropNameInRow="PRICE" msprop:Generator_ColumnPropNameInTable="PRICEColumn" msprop:Generator_UserColumnName="PRICE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHIPPING_x0020_COAST" msprop:Generator_ColumnVarNameInTable="columnSHIPPING_COAST" msprop:Generator_ColumnPropNameInRow="SHIPPING_COAST" msprop:Generator_ColumnPropNameInTable="SHIPPING_COASTColumn" msprop:Generator_UserColumnName="SHIPPING COAST" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMS" msprop:Generator_ColumnVarNameInTable="columnCUSTOMS" msprop:Generator_ColumnPropNameInRow="CUSTOMS" msprop:Generator_ColumnPropNameInTable="CUSTOMSColumn" msprop:Generator_UserColumnName="CUSTOMS" type="xs:string" minOccurs="0" />
+              <xs:element name="FINISH_x0020_PRICE" msprop:Generator_ColumnVarNameInTable="columnFINISH_PRICE" msprop:Generator_ColumnPropNameInRow="FINISH_PRICE" msprop:Generator_ColumnPropNameInTable="FINISH_PRICEColumn" msprop:Generator_UserColumnName="FINISH PRICE" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY_x0009_" msprop:Generator_ColumnVarNameInTable="_columnQTY_" msprop:Generator_ColumnPropNameInRow="_QTY_" msprop:Generator_ColumnPropNameInTable="_QTY_Column" msprop:Generator_UserColumnName="QTY	" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

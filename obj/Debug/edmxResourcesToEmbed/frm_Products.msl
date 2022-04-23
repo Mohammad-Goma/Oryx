@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Mobile_ChargerModelStoreContainer" CdmEntityContainer="Mobile_ChargerEntities">
+    <EntitySetMapping Name="PRODUCTS">
+      <EntityTypeMapping TypeName="Mobile_ChargerModel.PRODUCT">
+        <MappingFragment StoreEntitySet="PRODUCTS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PARCODE" ColumnName="PARCODE" />
+          <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT_NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="INITIAL_COAST" ColumnName="INITIAL_COAST" />
+          <ScalarProperty Name="LESS_PRICE" ColumnName="LESS_PRICE" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="SHIPPING_COAST" ColumnName="SHIPPING_COAST" />
+          <ScalarProperty Name="CUSTOMS" ColumnName="CUSTOMS" />
+          <ScalarProperty Name="FINISH_PRICE" ColumnName="FINISH_PRICE" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="IMAGE" ColumnName="IMAGE" />
+          <ScalarProperty Name="IMAGE_BINARY" ColumnName="IMAGE_BINARY" />
+          <ScalarProperty Name="ID_STORE" ColumnName="ID_STORE" />
+          <ScalarProperty Name="DETAILS_1" ColumnName="DETAILS_1" />
+          <ScalarProperty Name="DETAILS_2" ColumnName="DETAILS_2" />
+          <ScalarProperty Name="DETAILS_3" ColumnName="DETAILS_3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

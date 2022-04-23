@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Mobile_ChargerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PRODUCT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="PARCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PRODUCT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="INITIAL_COAST" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LESS_PRICE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PRICE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SHIPPING_COAST" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FINISH_PRICE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="QTY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IMAGE_BINARY" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ID_STORE" Type="Int32" />
+    <Property Name="DETAILS_1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DETAILS_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DETAILS_3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Mobile_ChargerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PRODUCTS" EntityType="Self.PRODUCT" />
+  </EntityContainer>
+</Schema>

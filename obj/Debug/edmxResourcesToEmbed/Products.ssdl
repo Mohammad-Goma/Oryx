@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Mobile_ChargerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRODUCTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="PARCODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="PRODUCT_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="UNIT" Type="nvarchar" MaxLength="50" />
+    <Property Name="CURRENCY" Type="nvarchar" MaxLength="50" />
+    <Property Name="INITIAL_COAST" Type="nvarchar" MaxLength="50" />
+    <Property Name="LESS_PRICE" Type="nvarchar" MaxLength="50" />
+    <Property Name="PRICE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SHIPPING_COAST" Type="nvarchar" MaxLength="50" />
+    <Property Name="CUSTOMS" Type="nvarchar" MaxLength="50" />
+    <Property Name="FINISH_PRICE" Type="nvarchar" MaxLength="50" />
+    <Property Name="QTY" Type="nvarchar" MaxLength="50" />
+    <Property Name="IMAGE" Type="image" />
+    <Property Name="IMAGE_BINARY" Type="varbinary(max)" />
+    <Property Name="ID_STORE" Type="int" />
+    <Property Name="DETAILS_1" Type="nvarchar" MaxLength="50" />
+    <Property Name="DETAILS_2" Type="nvarchar" MaxLength="50" />
+    <Property Name="DETAILS_3" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="Mobile_ChargerModelStoreContainer">
+    <EntitySet Name="PRODUCTS" EntityType="Self.PRODUCTS" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

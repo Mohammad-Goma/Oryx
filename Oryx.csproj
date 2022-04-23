@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7872C1F-5913-4DF1-A9E6-E7DF180E5717}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Oryx</RootNamespace>
+    <AssemblyName>Oryx</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Jommans-Briefness-File-System.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Billing_Crystal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Billing_Crystal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catch_Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catch_Money.Designer.cs">
+      <DependentUpon>Catch_Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalCatch.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalCatch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Crystal_Pay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crystal_Pay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Crystal_Profits.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crystal_Profits.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal_Store.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crystal_Store.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data_Set_billing.cs">
+      <DependentUpon>Data_Set_billing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Set_billing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_Set_billing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Store.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Store.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fill_Cbo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_products.Designer.cs">
+      <DependentUpon>Form_products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Store.Designer.cs">
+      <DependentUpon>Form_Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_back.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_back.Designer.cs">
+      <DependentUpon>frm_back.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Billing.Designer.cs">
+      <DependentUpon>frm_Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Catch_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Catch_Report.Designer.cs">
+      <DependentUpon>frm_Catch_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Crystal_Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Crystal_Billing.Designer.cs">
+      <DependentUpon>frm_Crystal_Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crystal_invoice.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frm_crystal_invoice.Designer.cs">
+      <DependentUpon>frm_crystal_invoice.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frm_crystal_pay.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frm_crystal_pay.Designer.cs">
+      <DependentUpon>frm_crystal_pay.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frm_Pay_Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Pay_Money.Designer.cs">
+      <DependentUpon>frm_Pay_Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Profits_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Profits_Report.Designer.cs">
+      <DependentUpon>frm_Profits_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Report_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Report_Store.Designer.cs">
+      <DependentUpon>frm_Report_Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Restore.Designer.cs">
+      <DependentUpon>frm_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Profits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profits.Designer.cs">
+      <DependentUpon>Profits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResizeTools.cs" />
+    <EmbeddedResource Include="Billing_Crystal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Billing_Crystal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catch_Money.resx">
+      <DependentUpon>Catch_Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalCatch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalCatch.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal_Pay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crystal_Pay.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal_Profits.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crystal_Profits.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal_Store.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crystal_Store.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_products.resx">
+      <DependentUpon>Form_products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Store.resx">
+      <DependentUpon>Form_Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_back.resx">
+      <DependentUpon>frm_back.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Billing.resx">
+      <DependentUpon>frm_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Catch_Report.resx">
+      <DependentUpon>frm_Catch_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Crystal_Billing.resx">
+      <DependentUpon>frm_Crystal_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crystal_invoice.resx">
+      <DependentUpon>frm_crystal_invoice.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crystal_pay.resx">
+      <DependentUpon>frm_crystal_pay.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Pay_Money.resx">
+      <DependentUpon>frm_Pay_Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Profits_Report.resx">
+      <DependentUpon>frm_Profits_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Report_Store.resx">
+      <DependentUpon>frm_Report_Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Restore.resx">
+      <DependentUpon>frm_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profits.resx">
+      <DependentUpon>Profits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Set_billing.xsc">
+      <DependentUpon>Data_Set_billing.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Set_billing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_Set_billing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data_Set_billing.xss">
+      <DependentUpon>Data_Set_billing.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Store.xsc">
+      <DependentUpon>DS_Store.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Store.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Store.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Store.xss">
+      <DependentUpon>DS_Store.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oryx.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Jommans-Briefness-File-System.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
